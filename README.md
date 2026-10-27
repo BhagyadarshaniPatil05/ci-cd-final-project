@@ -1,38 +1,28 @@
-# CI/CD Tools and Practices Final Project Template
+# CI/CD Final Project
 
-This repository contains the template to be used for the Final Project for the Coursera course **CI/CD Tools and Practices**.
+## Project Name
 
-## Usage
+CI/CD Final Project – Counter Microservice
 
-This repository is to be used as a template to create your own repository in your own GitHub account. No need to Fork it as it has been set up as a Template. This will avoid confusion when making Pull Requests in the future.
+## Description
 
-From the GitHub **Code** page, press the green **Use this template** button to create your own repository from this template.
+This project demonstrates the implementation of a complete Continuous Integration and Continuous Delivery (CI/CD) pipeline for a RESTful counter microservice.
 
-Name your repo: `ci-cd-final-project`.
+The project uses GitHub Actions for continuous integration and Red Hat OpenShift Pipelines with Tekton for continuous delivery.
 
-## Setup
+## Technologies Used
 
-After entering the lab environment you will need to run the `setup.sh` script in the `./bin` folder to install the prerequisite software.
+- Python
+- Flask
+- GitHub
+- GitHub Actions
+- Tekton
+- OpenShift Pipelines
+- Docker
+- Kubernetes/OpenShift
 
-```bash
-bash bin/setup.sh
-```
+## CI/CD Workflow
 
-Then you must exit the shell and start a new one for the Python virtual environment to be activated.
+The GitHub Actions workflow performs code linting and unit testing automatically whenever changes are pushed to the repository.
 
-```bash
-exit
-```
-
-## Tasks
-
-
-## License
-
-Licensed under the Apache License. See [LICENSE](/LICENSE)
-
-## Author
-
-Skills Network
-
-## <h3 align="center"> © IBM Corporation 2023. All rights reserved. <h3/>
+The OpenShift Pipeline performs the required CI/CD tasks, including cleanup, linting, unit testing, building the application image, and deploying the application to OpenShift.
